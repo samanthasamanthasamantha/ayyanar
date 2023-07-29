@@ -1,0 +1,1292 @@
+html {
+    scroll-padding-top: 75px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.dash {
+    height: 4px;
+    background: blue;
+    margin: 9px 46%;
+}
+
+i.fa-brands.fa-facebook-f,
+i.fa-brands.fa-twitter,
+i.fa-brands.fa-instagram,
+i.fa-brands.fa-youtube {
+    padding: 11px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    margin-right: 5px;
+    color: white;
+}
+
+i.fa-brands.fa-facebook-f {
+    background: blue;
+}
+
+i.fa-brands.fa-twitter {
+    background: deepskyblue;
+}
+
+i.fa-brands.fa-instagram {
+    background: linear-gradient(#e312e3, #dd082d, #f7f712);
+    border-radius: 14px;
+}
+
+i.fa-brands.fa-youtube {
+    background: red;
+}
+
+/* header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header .title h1 {
+    color: #00f1ff;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a {
+    padding: 10px;
+    color: #04f5ec;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 0 0 8px #04f5ec;
+}
+
+.header .navbar a:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+
+.header .menubar {
+    display: none;
+    color: white;
+}
+
+/* banner section */
+
+.banner {
+    background: linear-gradient(rgb(203 9 161 / 50%), rgb(10 237 6 / 50%)), url(./college/college.jpg)no-repeat fixed;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .text {
+    position: absolute;
+    top: 42%;
+    color: white;
+    left: 5%;
+    line-height: 3.5em;
+}
+
+.banner .text h1 span::after {
+    content: '';
+    animation: change 8s linear infinite;
+}
+
+.banner .text button {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 15px;
+    box-shadow: 5px 4px 5px 0px black, inset -2px -1px 4px 0px black;
+    cursor: pointer;
+}
+
+.banner .text a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner i {
+    color: blue;
+}
+
+.banner .image {
+    position: absolute;
+    right: 5%;
+    /* top: 6%; */
+    top: 21%;
+    box-shadow: 0 0 20px 5px whitesmoke;
+    border-radius: 14px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.banner .image img {
+    width: 350px;
+    padding: 27px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+/* hovering effects */
+
+.banner button:hover {
+    box-shadow: 3px 2px 15px 2px white;
+}
+
+.banner .text button:active {
+    transform: translateY(4px);
+}
+
+.banner img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+/* animations effects*/
+
+@keyframes change {
+    0% {
+        content: 'Web Developer';
+    }
+
+    25% {
+        content: 'Youtuber';
+    }
+
+    50% {
+        content: 'Photo Editor';
+    }
+
+    75% {
+        content: 'Video Editor';
+    }
+
+    100% {
+        content: 'Athlete';
+    }
+}
+
+/* service topic */
+
+.service-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* service gallery */
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service .service-box {
+    padding: 14px;
+    border: 14px ridge;
+    text-align: center;
+    line-height: 2.1em;
+    margin: 50px;
+    box-shadow: 0 0 18px 2px whitesmoke;
+    background: linear-gradient(356deg, #000000, rgb(0 255 10));
+    flex: 25%;
+    color: black;
+}
+
+.service i {
+    font-size: 3.5em;
+    padding: 14px;
+    border-radius: 12%;
+}
+
+.service button {
+    padding: 12px 15px;
+    border-radius: 9px;
+    background-color: dodgerblue;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin: 16px 0px;
+}
+
+/* hovering effects */
+
+.service-box:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 8px;
+    color: aliceblue;
+    border-style: groove;
+    /* border-radius: 0% 163% 0% 0% / 60% 72% 0% 0%; */
+}
+
+.service-box:hover i {
+    text-shadow: 0px 0px 8px white;
+    color: aliceblue;
+}
+
+.service-box:hover button {
+    box-shadow: 0 0 11px 6px;
+}
+
+/* about section topic */
+
+.about-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* about section gallery */
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.about-us .about-us-box {
+    flex: 28%;
+    margin: 22px;
+    border: 2px solid deepskyblue;
+    box-shadow: 0 0 10px deepskyblue, inset 0 0 10px deepskyblue;
+    padding: 19px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-us .about-us-box .photodiv {
+    overflow: hidden;
+}
+
+.about-us .about-us-box img {
+    width: 100%;
+    transition: 2s;
+}
+
+.about-us .about-us-box a {
+    text-decoration: none;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow, inset 0 0 10px yellow;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 9px;
+    color: white;
+}
+
+/* hovering effects */
+
+.about-us .about-us-box:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 10px white, inset 0 0 10px white;
+}
+
+.about-us .about-us-box a:hover {
+    border: 2px solid rgb(0, 255, 0);
+    box-shadow: 0 0 10px rgb(0, 255, 0), inset 0 0 10px rgb(0, 255, 0);
+}
+
+.about-us .about-us-box img:hover {
+    transform: scale(1.5);
+    transform-origin: 0% 100%;
+    cursor: pointer;
+}
+
+/* my youtube video topic */
+
+.youtube-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* my youtube videos */
+
+.youtube-videos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/*  go to my channel topic */
+
+.youtube-image-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/*  go to my channel videos */
+
+.fight-videos {
+    display: flex;
+}
+
+.fight-videos div {
+    flex: 50%;
+    margin: 50px;
+    box-shadow: 0px 0px 16px 0px grey;
+    border: 13px outset;
+}
+
+.fight-videos img {
+    width: 100%;
+}
+
+/* projcet topic */
+
+.project-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* my projects */
+
+.my-projects {
+    margin: 20px;
+}
+
+.my-projects .project {
+    box-shadow: 0 0 20px 1px grey;
+    margin: 24px;
+    margin-bottom: 71px;
+}
+
+/* languages known topic */
+
+.lang-known-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* langauges known */
+
+.lang-known {
+    margin: 2% 10% 7% 10%;
+}
+
+.lang-known h1 {
+    margin: 28px 0;
+}
+
+.lang-known i {
+    font-size: 2em;
+}
+
+.progressbar {
+    background-color: lightgrey;
+    border-radius: 17px;
+    box-shadow: 5px 5px 0px 0px grey;
+}
+
+.progress {
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    border-radius: 18px;
+}
+
+.progress1 {
+    width: 70%;
+    background-color: coral;
+
+}
+
+.progress2 {
+    width: 80%;
+    background-color: dodgerblue;
+
+}
+
+.progress3 {
+    width: 20%;
+    background-color: yellow;
+
+}
+
+.progress4 {
+    width: 10%;
+    background-color: green;
+
+}
+
+/* our team topic */
+
+.team-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* our team gallery */
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 54px;
+    margin: 34px;
+}
+
+.team-gallery .member {
+    display: flex;
+    align-items: center;
+    /* padding: 36px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 1s;
+    background: white;
+    color: black;
+}
+
+.team-gallery .photo {
+    padding: 40px;
+}
+
+.team-gallery .photo img {
+    width: 169px;
+    border-radius: 0% 100% 0% 100% / 45% 72% 28% 55%;
+    box-shadow: 3px 5px 1px 4px;
+    transition: 1s;
+}
+
+.team-gallery .text {
+    line-height: 2em;
+}
+
+/* hovering effects */
+
+.team-gallery .member:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+.team-gallery .member:hover img {
+    box-shadow: 3px 5px 1px 4px white;
+}
+
+/*  sample topic */
+
+.sample-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* sample videos */
+
+.sample-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sample-gallery .video-div {
+    flex: 20%;
+    margin: 20px;
+}
+
+.sample-gallery .video-div h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sample-gallery .video-div video {
+    height: 380px;
+    border: 2px dashed #80808085;
+    padding: 18px;
+    border-radius: 6% 26% 12% 17%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* frequently questions topic */
+
+.frequently-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* frequently questions tabs */
+
+.tab {
+    background-color: #4e4e4e;
+    margin: 28px 47px;
+}
+
+.clicker {
+    padding: 14px;
+    font-weight: bold;
+}
+
+.hiddendiv {
+    display: none;
+    padding: 7px 26px;
+    line-height: 30px;
+}
+
+.clicker:focus+.hiddendiv {
+    display: block;
+    animation: fadeeffect 1s;
+}
+
+.tab .fa-circle-question {
+    color: #00bfe6;
+    padding: 0 9px;
+}
+
+.tab .fa-chevron-down {
+    float: right;
+    padding-right: 10px;
+}
+
+/* hover effects */
+
+.tab:hover .clicker {
+    color: #1977cc;
+    cursor: pointer;
+}
+
+/* animation effects */
+
+@keyframes fadeeffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* favourite cartoons topic */
+
+.cartoon-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* favourite cartoons video gallery */
+
+.cartoon-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartoon-gallery .video-div {
+    flex: 25%;
+    margin: 20px;
+}
+
+.cartoon-gallery .video-div h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cartoon-gallery .video-div video {
+    /* height: 380px; */
+    /* border: 2px solid; */
+    /* padding: 17px; */
+    box-shadow: 1px -4px 11px 2px darkgrey;
+}
+
+/* favourite movies topic */
+
+.fav-movies-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* favourite movies */
+
+.fav-movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.fav-movies .fav-movie-box {
+    flex: 20%;
+    margin: 25px;
+    box-shadow: 0 0 20px 5px whitesmoke;
+    border-radius: 14px;
+    background-color: whitesmoke;
+}
+
+.fav-movies .fav-movie-box img {
+    width: 100%;
+    padding: 20px;
+}
+
+/* favourite songs topic */
+
+.fav-song-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* favourite songs */
+
+.fav-songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 15px auto;
+}
+
+.fav-songs .fav-song-box {
+    background: cornflowerblue;
+    padding: 12px 22px;
+    margin: 19px 3px;
+}
+
+.fav-songs .fav-song-box h3 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: aliceblue;
+    text-shadow: -3px -2px 2px BLACK;
+}
+
+/* social account topic */
+
+.social-account-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* social accounts gallery */
+
+.social-account-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+    margin: 61px 70px;
+}
+
+.social-account-gallery .social-image {
+    box-shadow: 0px 0px 20px 0px grey;
+    border: 16px ridge #fbfbfb;
+    overflow: hidden;
+    background-color: white;
+}
+
+.social-account-gallery img {
+    width: 100%;
+    /* padding: 5px; */
+    transition: 2s;
+}
+
+/* hovering effects */
+
+.social-account-gallery img:hover {
+    transform: scale(1.5);
+    transform-origin: 0 0;
+}
+
+/* .social-image:hover {
+    border: 16px inset #05f8ff;
+    box-shadow: 0 0 20px 4px #06e7bd;
+} */
+
+
+/* favourite persons topic */
+
+.fav-persons-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* favourite persons gallery */
+
+.fav-person-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.fav-person-gallery .fav-person-box {
+    border-radius: 5%;
+    flex: 25%;
+    background: linear-gradient(232deg, #0aedef, #0e0e0e);
+    text-align: center;
+    padding: 21px 29px;
+    color: white;
+    line-height: 2em;
+    transition: 2s;
+    margin: 0 23px;
+    /* text-shadow: 0px 2px 0px white; */
+}
+
+.fav-person-gallery img {
+    border-radius: 100% 0% 100% 0% / 93% 69% 91% 68%;
+    box-shadow: 0px 0px 7px 2px black;
+    transition: 2s;
+}
+
+.fav-person-gallery h2 {
+    padding: 12px 0;
+}
+
+.fav-person-gallery p {
+    line-height: 1.6em;
+    padding: 7px 0px;
+}
+
+.fav-person-gallery a {
+    display: inline-block;
+    color: white;
+    background: dodgerblue;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px;
+}
+
+/* hovering effects */
+
+.fav-person-gallery .fav-person-box:hover {
+    background: linear-gradient(208deg, #eb05c0, #0aed5b);
+    color: white;
+}
+
+.fav-person-gallery .fav-person-box:hover img {
+    transform: rotate3d(1, 1, 1, 48deg);
+    box-shadow: 1px 1px 0px 19px white;
+}
+
+/* where learn course topic */
+
+.where-learn-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 16px;
+    margin-top: 68px;
+}
+
+/* where learn course */
+
+.where-learn-course {
+    display: flex;
+}
+
+.where-learn-course .course-box {
+    flex: 20%;
+    box-shadow: -4px -3px 20px 0px lightgrey, 11px 13px 3px 0px lightgrey inset;
+    margin: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 2s;
+    background: white;
+}
+
+.where-learn-course .course-box img {
+    width: 100%;
+    padding: 49px;
+    transition: 2s;
+}
+
+/* hovering effects */
+
+.where-learn-course .course-box:hover {
+    border-radius: 10%;
+    border: 10px dotted #22e10b;
+}
+
+.where-learn-course .course-box:hover img {
+    transform: rotate(45deg);
+}
+
+/* contact us topic */
+
+.contact-us-topic {
+    text-align: center;
+    padding: 20px;
+    line-height: 2.1em;
+    margin: 8px;
+}
+
+/* contact us */
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    margin: 41px 0;
+}
+.contact-us .contact-form{
+    margin: 0 76px 0 53px;
+}
+.contact-us .contact-form label {
+    font-weight: bold;
+}
+
+.contact-us .contact-form input:not(input[type=button]) {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 16px 0;
+    border-radius: 6px;
+    border: 1px solid darkgrey;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.contact-us .contact-form textarea {
+    resize: none;
+    width: 100%;
+    height: 118px;
+    padding: 12px 20px;
+    margin: 16px 0;
+    border-radius: 6px;
+    border: 1px solid darkgrey;
+    outline: none;
+}
+
+.contact-form .box5 {
+    text-align: center;
+}
+
+.contact-us .contact-form input[type="button"] {
+    padding: 9px 18px;
+    background: dodgerblue;
+    color: white;
+    font-size: 1em;
+    border: 0;
+}
+
+.contact-us .contact-detail {
+    line-height: 2.5em;
+}
+
+.contact-us .contact-detail a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lime;
+}
+
+/* hovering effects */
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 20px 13px #0eed15;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+}
+
+.contact-us .contact-detail a:hover{
+    color: #00ffea;
+}
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    color: white;
+}
+
+.footer .footerbox {
+    line-height: 1.9em;
+    margin: 20px;
+}
+
+.footer h1 {
+    padding: 24px 0;
+    color: yellow;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footerbox4 i {
+   
+    padding: 11px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.footer a:hover {
+    color: lime;
+}
+
+/* media queries */
+
+@media(max-width:1250px) and (min-width:1150px) {
+    .team-gallery {
+        gap: 26px;
+        margin: 21px;
+    }
+
+    .team-gallery img {
+        width: 145px;
+    }
+}
+
+@media(max-width:1150px) and (min-width:992px) {
+    .team-gallery .member {
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-gallery .text {
+        line-height: 2em;
+        padding: 0 6px 30px 6px;
+    }
+}
+
+@media(max-width:1072px) {
+    .banner .text {
+        font-size: 14px;
+    }
+
+    .banner .text button {
+        padding: 6px;
+    }
+
+    .banner .image img {
+        width: 229px;
+    }
+
+    .banner .image {
+        top: 32%;
+    }
+}
+
+@media(max-width:1040px){
+    .fav-movies{
+        flex-wrap: wrap;
+    }
+    .fav-movies .fav-movie-box {
+        flex: 30%;
+    }
+}
+
+@media(max-width:1025px){
+    .contact-us{
+        flex-direction: column;
+        margin: 66px;
+    }
+
+    .contact-us .contact-detail {
+        margin: 80px 73px 18px 53px;
+    }
+}
+
+@media(max-width:1005px){
+    .sample-gallery .video-div {
+        flex: 30%;
+    }
+}
+
+@media (max-width:992px) {
+
+    /* header section */
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .title {
+        margin: -10px 0px 13px 0px;
+    }
+
+    .about-us .about-us-box{
+        flex: 30%;
+    }
+
+    .youtube-videos {
+        grid-template-columns: auto auto;
+    }
+
+    .youtube-videos .big-match:nth-of-type(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .fight-videos {
+        flex-direction: column;
+    }
+
+    .team-gallery {
+        grid-template-columns: auto;
+    }
+
+    .team-gallery .text{
+        padding: 0;
+    }
+
+    .cartoon-gallery .video-div {
+        flex: 30%;
+    }
+
+    .social-account-gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 35px;
+        margin: 61px 70px;
+    }
+    .fav-person-gallery .fav-person-box{
+        margin: 23px;
+    }
+
+    .footer{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    
+}
+
+@media(max-width:850px){
+    .cartoon-gallery{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:832px) {
+
+    /* header section */
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header .title {
+        margin: 0;
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
+    .header .menubar {
+        display: block;
+    }
+
+    .banner .text {
+        font-size: 12px;
+    }
+
+    .banner .image img {
+        width: 206px;
+        padding: 19px;
+    }
+
+    .where-learn-course .course-box img {
+        padding: 23px;
+       
+    }
+}
+
+@media(max-width:770px){
+    .social-account-gallery{
+        margin: 61px 58px;
+    }
+}
+
+@media(max-width:765px) {
+    .banner .text {
+        top: 50%;
+        left: 10%;
+        font-size: 1em;
+    }
+
+    .banner .image {
+        top: 5%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .banner .image img {
+        width: 229px;
+        padding: 24px;
+        border-radius: 0;
+    }
+
+    .youtube-videos {
+        grid-template-columns: auto;
+    }
+
+    .youtube-videos .big-match:nth-of-type(3) {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .lang-known i {
+        font-size: 1.5em;
+    }
+
+    .lang-known .progress {
+        font-size: 1em;
+    }
+    .where-learn-course .course-box{
+        margin: 15px;
+    }
+
+}
+
+@media(max-width:700px){
+    .about-us {
+        padding: 4px;
+    }
+}
+
+@media(max-width:655px){
+    .contact-us {
+        margin: 20px 0;
+    }
+    .contact-us .contact-form {
+        margin: 0 29px;
+    }
+}
+
+@media(max-width:650px){
+    .sample-gallery{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:630px){
+    .social-account-gallery{
+        grid-template-columns: auto;
+    }
+
+}
+
+@media(max-width:625px) and (min-width:472px) {
+    .banner .text {
+        font-size: 0.8em;
+        left: 5%;
+    }
+}
+
+@media(max-width:600px){
+    .about-us {
+        padding: 95px;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:576px){
+    .footer {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+@media(max-width:535px){
+    .about-us{
+        padding: 58px;
+    }
+}
+
+@media(max-width:520px){
+    .where-learn-course{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .where-learn-course .course-box{
+        margin: 39px 76px;
+    }
+}
+
+@media(max-width:471px) {
+    .banner .text {
+        top: 42%;
+        left: 10%;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .banner button {
+        margin: 10px;
+    }
+
+    .about-us {
+        padding: 15px;
+    }
+    
+}
+
+@media(max-width:380px) {
+    .banner {
+        text-align: center;
+    }
+
+    .where-learn-course .course-box{
+        margin: 30px 76px;
+    }
+}
+
+@media(max-width:350px){
+    .where-learn-course .course-box {
+        margin: 18px 48px;
+    }
+}

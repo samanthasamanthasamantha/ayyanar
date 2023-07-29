@@ -1,0 +1,721 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* navbar section */
+
+.navbar{
+    display: flex;
+    background :linear-gradient(rgb(29, 27, 61), rgb(29, 27, 61));
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 25px 47px;
+    position: sticky;
+    top: 0;
+    z-index: 2;   
+    /* box-shadow: 2px 4px 20px 6px #1d1b3d; */
+}
+
+.navbar .topic{
+    color: white;
+    font-size: 36px;
+}
+
+.navbar .navbar-links{
+    display: flex;    
+}
+
+.navbar .navbar-links .nav-item{
+    padding: 10px;
+}
+
+.navbar .navbar-links a, .dropbtn{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    background-color: burlywood;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    border-top: 3px solid aqua;
+    margin-top: 13px;
+}
+
+.dropdown-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+
+.dropdown-content a:hover{
+    
+    color: #6610f2;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    color:  #6610f2;
+
+}
+
+.navbar button{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* showcase section */
+
+.showcase{
+  
+   display: flex; 
+   background :linear-gradient(rgb(29, 27, 61), rgb(79, 9, 243));
+   color: white;
+   font-family: sans-serif;
+}
+
+.showcase .text-div{
+    padding: 100px;
+    
+}
+
+.showcase .text-div h1{
+    font-size: 2.5em;
+}
+
+.showcase .text-div p{
+    font-size: 1.1em;
+}
+
+.showcase .text-div .btn1{
+    background-color: white;
+    color: dodgerblue;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 29px;
+}
+
+.showcase .text-div .btn2{
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.showcase .image-div{
+    padding: 40px;
+}
+
+/* provide */
+
+.provide{
+    text-align: center;
+    padding-top: 75px;
+}
+
+.provide h3{
+    color: orangered;
+}
+
+/* it-solution */
+
+.it-solution{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 122px; 
+    gap: 100px;                        
+}
+
+.it-solution .column{
+    box-shadow: -2px -2px 17px 3px #9E9E9E;
+    padding: 34px;
+}
+
+.it-solution .column i{
+    font-size: 60px;
+    color: orangered; 
+}
+
+.it-solution .column p{
+    color: gray;
+    line-height: 1.6em;
+}
+
+.it-solution .column a{
+    color: orangered;
+    font-weight: bold;
+}
+
+/* about */
+
+.about{
+    display: flex;
+    padding: 46px;
+    font-family: sans-serif;
+}
+
+.about .text-div, .about .image-div{
+    padding: 30px;
+}
+
+.about .text-div h3{
+    color: #6610f2;
+    font-weight: bold;
+}
+
+.about .text-div .para{
+    color: gray;
+    line-height: 2em;
+    font-weight: normal;
+}
+
+.about .text-div p{
+    color: #6610f2;
+    font-weight: bold;
+}
+
+.about .text-div .dash1{
+    height: 6px;
+    background-color: blue;
+    /* width: 90%; */
+    width: 10%;
+    transition: width 5s;
+}
+
+.about .text-div .dash2{
+    height: 6px;
+    background-color: blue;
+    /* width: 75%; */
+    width: 10%;
+    transition: width 5s;
+}
+
+.about .text-div .dash3{
+    height: 6px;
+    background-color: blue;
+    /* width: 80%; */
+    width: 10%;
+    transition: width 5s;
+}
+
+.about .text-div button{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 14px 33px;
+    margin-top: 24px;
+    border-radius: 7px;
+}
+
+.about:hover .dash1{
+    width: 90%;
+}
+
+.about:hover .dash2{
+    width: 75%;
+}
+
+.about:hover .dash3{
+    width: 80%;
+}
+
+/*why choose as*/
+
+.choose{
+    display: flex;
+    padding: 81px;
+}
+
+.choose .text-div .total-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose .text-div .total-column .right-column{
+    padding-right: 136px;
+}
+
+
+.choose .text-div h4{
+    color: orangered;
+}
+
+.choose .text-div>p{
+    color: gray;
+}
+
+.choose .text-div .total-column p{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-left: 2px solid #6610f2;
+    border-radius: 5px;
+    transition: width 0.4s;
+    width: 200px;
+}
+
+.choose .text-div .total-column p:hover{
+    color: white;
+    background-color: #6610f2;
+    width: 250px;
+
+}
+
+/* trust */
+
+.trust{
+    display: flex;
+    padding: 100px;
+}
+
+.trust .text-div .total-column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust .text-div .total-column .right-column{
+    padding-right: 136px;
+}
+
+
+.trust .text-div h4{
+    color: orangered;
+}
+
+.trust .text-div>p{
+    color: gray;
+}
+
+.trust .text-div .total-column p{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-left: 2px solid #6610f2;
+    border-radius: 5px;
+    transition: width 0.4s;
+    width: 220px;
+}
+
+.trust .text-div .total-column p:hover{
+    color: white;
+    background-color: #6610f2;
+    width: 250px;
+
+}
+
+/* banner */
+
+.banner{
+    background: linear-gradient(rgb(203 9 161 / 50%), rgb(10 237 6 / 50%)), url(./banner-bg.jpg)no-repeat fixed;
+    background-size: cover;
+    padding: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    color: white;
+    line-height: 0.3em;
+    text-align: center;
+}
+
+/* .banner .div1 h1, .banner .div1 h5{
+    color: white;  
+} */
+
+/* testimonal */
+
+.testimonal{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.testimonal h4{
+    color: orangered;
+}
+
+.testiomanl-div .column .para{
+    font-size: 15px;
+    color: #333;
+    font-style: italic;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* testimonal section */
+
+.testiomanl-div{
+    display: flex;
+    text-align: center;
+    padding: 40px;
+}
+
+.testiomanl-div .column{
+    padding: 28px;
+}
+
+.testiomanl-div .column img{
+    border-radius: 50%;
+    width: 120px;    
+}
+
+/* team */
+
+.team{
+    text-align: center;
+}
+
+.team h3{
+    color: orangered;
+}
+
+
+  
+/* team gallery */
+
+.team-gallery{
+    display: flex;
+    margin: 65px;
+}
+
+.team-gallery .column{
+    position: relative;
+    flex: 33.33%; 
+    margin: 18px; 
+    text-align: center; 
+}
+
+.team-gallery .column img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-gallery .column .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.team-gallery .column .overlay .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.team-gallery .column:hover .overlay{
+    opacity: 1;
+    
+}
+
+.team-gallery i{
+    padding: 10px;
+}
+
+
+
+/* blog */
+
+.blog{
+    text-align: center;
+}
+
+.blog h4{
+    color: orangered;
+}
+
+/* recent blog */
+
+.blog-gallery{
+    display: flex;
+    padding: 20px 100px;
+}
+
+.blog-gallery .column{
+    padding: 18px;
+    line-height: 1.6em;
+}
+
+.blog-gallery .column h3{
+    color: skyblue;
+    color: #06060699;
+}
+
+.blog-gallery .column span{
+    padding-right: 20px;
+    color: rgb(121, 15, 221);
+    font-weight: bold;
+}
+
+.blog-gallery .column .para{
+    padding: 22px 0px;
+    color: gray;
+}
+
+.blog-gallery .column a{
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+
+}
+
+/* showcase2 */
+
+.showcase2{
+    background: linear-gradient(rgb(21 158 223 / 50%), rgb(0 0 0 / 50%)), url(./banner-bg.jpg)no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 38px;
+    color: white;
+}
+
+.showcase2 h3{
+    color: orangered;
+}
+
+.showcase2 p{
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 0 216px;
+}
+
+.showcase2 .btn1{
+    padding: 16px 40px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    margin: 18px;
+}
+
+.showcase2 .btn2{
+    padding: 16px 40px;
+    border: none;
+    background-color: white;
+    color: blueviolet;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* our customer */
+
+.customer{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.customer h3{
+    color: orangered;
+}
+
+/* customer gallery */
+
+.customer-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 120px;
+    padding-top: 32px;
+    justify-content: center;
+}
+
+.customer-gallery div{
+    padding: 20px;
+}
+
+.customer-gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.customer-gallery div img:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+
+/* footer section 1 */
+
+.footer1{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.footer1 .input-div{
+    display: flex;
+    padding: 38px;
+}
+
+.footer1 .input-div input{
+    padding: 15px 195px;
+    padding-left: 29px;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.footer1 .input-div button{
+    padding: 0 43px;
+    border: 1px solid blueviolet;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: blueviolet;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* horizontal line */
+
+.horiline{
+    height: 1px;
+    background-color: gray;
+}
+
+/* footer section 2 */
+
+.footer2{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 97px;
+}
+
+.footer2 .column{
+    padding: 16px;
+}
+
+.footer2 .big{
+    flex: 30%;   
+}
+
+.footer2 .big h2{
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.footer2 .small{
+    flex: 20%;
+}
+
+.footer2 .small h2{
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.footer2 .small div{
+    padding: 13px;
+}
+
+.footer2 .small a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer2 .about-us p{
+    line-height: 1.5em;
+}
+
+.footer2 .about-us i{
+    color: white;
+    font-size: 30px;
+    padding-right: 17px;
+}
+
+.footer2 .contact-info .common i{
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.footer2 .contact-info .common p{
+    padding-left: 35px;
+}
+
+.footer2 .contact-info .second a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+/* copyright section 1 */
+
+.copyright{
+    display: flex;
+    background-color: #000000de;
+    color: white;
+    justify-content: space-between;
+}
+
+.copyright p{
+    padding: 35px 111px;
+}
+
+@media screen and (max-width:800px) {
+    .showcase{
+        flex-direction: column;
+    }
+
+    .it-solution{
+        grid-template-columns: auto auto;
+        gap: 48px;
+        padding: 42px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .choose{
+        flex-direction: column;
+    }
+
+    .trust{
+        flex-direction: column;
+    }
+   
+}
